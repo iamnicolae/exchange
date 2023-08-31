@@ -14,8 +14,7 @@ exports.handler = async function (event, context) {
   //   }
   // });
 
-  const data = await fs.readFile("./dist/exchangeRates.json");
-
+  const data = await fs.readFile("./exchangeRates.json");
 
   return {
     statusCode: 200,
