@@ -35,7 +35,7 @@ exports.handler = async function (event, context) {
 
   let data = JSON.stringify(rates);
 
-  fs.writeFile('./functions/data/exchangeRates.json', data, (err) => {
+  fs.writeFile('./data/exchangeRates.json', data, (err) => {
     if (err) throw err;
     console.log('exchangeRates.json updated!');
   });

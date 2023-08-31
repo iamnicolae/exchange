@@ -5,4 +5,4 @@
 
 [functions]
   node_bundler = "esbuild"
-  included_files = ["data/exchangeRates.json"]
+  included_files = ["./functions/data/exchangeRates.json"]

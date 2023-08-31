@@ -8,9 +8,9 @@ function App() {
 
   useEffect(() => {
 
-    fetch('/.netlify/functions/updateExchange')
-      .then(data => data.json())
-      .then(msg => console.log(msg))
+    // fetch('/.netlify/functions/updateExchange')
+    //   .then(data => data.json())
+    //   .then(msg => console.log(msg))
 
     fetch('/.netlify/functions/getExchange')
       .then(data => data.json())
