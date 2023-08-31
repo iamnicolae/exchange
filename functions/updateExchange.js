@@ -1,6 +1,7 @@
 const fs = require('fs')
 import fetch from 'node-fetch';
 const cheerio = require('cheerio')
+const path = require('path')
 
 exports.handler = async function (event, context) {
 
@@ -35,7 +36,7 @@ exports.handler = async function (event, context) {
 
   let data = JSON.stringify(rates);
 
-  fs.writeFile('./data/exchangeRates.json', data, (err) => {
+  fs.writeFile(path.join(__dirname, './data/exchangeRates.json'), data, (err) => {
     if (err) throw err;
     console.log('exchangeRates.json updated!');
   });
