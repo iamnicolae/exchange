@@ -15,13 +15,12 @@ exports.handler = async function (event, context) {
   //   }
   // });
 
-  const data = await fs.readFile(path.join(__dirname, './data/exchangeRates.json'));
-
+  const data = await fs.readFile(path.resolve('./functions', './data/exchangeRates.json'));
 
 
   return {
     statusCode: 200,
-    body: data.toString()
+    body: JSON.stringify(data.toString())
   }
 
 
