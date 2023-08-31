@@ -35,11 +35,11 @@ exports.handler = async function (event, context) {
 
 
   //let data = JSON.stringify(rates);
-  let data2 = JSON.stringify([{ bank: "abe9978787890000000000000000000000" }])
+  let data2 = JSON.stringify([{ bank: "1010101010101010010" }])
 
-  const file = await fs.writeFile('/tmp/exchangeRates.json', data2)
+  const file = await fs.writeFile(path.join(__dirname, '../../../../../dist/exchangeRates.json'), data2)
 
-  console.log(path.resolve('./functions', './data/exchangeRates.json'))
+  console.log(path.join(__dirname, '../../../../dist/exchangeRates.json'))
 
   // fs.writeFileSync(path.join(__dirname, './data/exchangeRates.json'), data2, (err) => {
   //   if (err)
