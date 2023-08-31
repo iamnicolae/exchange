@@ -1,6 +1,6 @@
 const fs = require('fs').promises
 
-const testJSON = require('../dist/exchangeRates.json')
+//const testJSON = require('../dist/exchangeRates.json')
 
 exports.handler = async function (event, context) {
 
@@ -14,14 +14,12 @@ exports.handler = async function (event, context) {
   //   }
   // });
 
-  const data = await fs.readFile("./exchangeRates.json");
+  const data = await fs.readFile("./functions/data/exchangeRates.json");
 
   return {
     statusCode: 200,
     body: data.toString()
   }
-
-
 
 
 }
