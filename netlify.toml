@@ -5,6 +5,3 @@
 
 [functions]
   node_bundler = "esbuild"
-
-[functions."updateExchange"]
-  schedule = "@hourly"
