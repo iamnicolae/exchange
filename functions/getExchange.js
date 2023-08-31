@@ -15,7 +15,7 @@ exports.handler = async function (event, context) {
   //   }
   // });
 
-  const data = await fs.readFile(path.join(__dirname, '../../../../../dist/exchangeRates.json'));
+  const data = await fs.readFile('./exchangeRates.json');
 
 
   return {
