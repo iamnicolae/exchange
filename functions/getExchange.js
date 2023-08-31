@@ -1,6 +1,6 @@
 //const fs = require('fs')
 
-const testJSON = require('./data/exchangeRates.json')
+const testJSON = require('../public/exchangeRates.json')
 
 exports.handler = async function (event, context) {
 
