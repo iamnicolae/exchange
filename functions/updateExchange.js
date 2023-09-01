@@ -91,7 +91,7 @@ exports.handler = async function (event, context) {
       body: file,
       headers: {
         'Content-Type': 'application/octet-stream',
-        'Authorization': `Bearer sl.BlKmBAZLkwIGsfscI27KfLt9wsAR8goaJBLJFPoM0aMBvv6A847rKdB5q-Dwkh80yKsX0espIjn_ranzMTr-_rd7CY-74Mb2jx-23pCfmTZk2hd_zJXHxN8C0Rguu-_WSKRAEHzyQjn_`,
+        'Authorization': `Bearer sl.BlNxuRkvJOM4MEG2FPBU4OEpeu6hzOKDLlcdErwG0EOk2g7QhzDJmUn1VfNlOSiuxyU3UEQwGyaGevRT85Rk_jlqsKMNb2IVx804sCnGSstHZTAJsM35YoPGxbRtE8X0TojWuAfQBtAF`,
         'Dropbox-API-Arg': '{"path": "/rates.json","mode": "overwrite","autorename": false,"mute": false}'
       }
     })
