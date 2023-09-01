@@ -16,6 +16,52 @@ function App() {
       .then(data => data.json())
       .then(msg => console.log(msg))
 
+    // async function dropbox() {
+    //   var fileContent = JSON.stringify({ bank_name: '00000000000000000', });
+    //   var file = new Blob([fileContent], { type: 'application/json' });
+
+    //   try {
+    //     const data = await fetch('https://content.dropboxapi.com/2/files/upload', {
+    //       method: 'POST',
+    //       body: file,
+    //       headers: {
+    //         'Content-Type': 'application/octet-stream',
+    //         'Authorization': `Bearer sl.BlKmBAZLkwIGsfscI27KfLt9wsAR8goaJBLJFPoM0aMBvv6A847rKdB5q-Dwkh80yKsX0espIjn_ranzMTr-_rd7CY-74Mb2jx-23pCfmTZk2hd_zJXHxN8C0Rguu-_WSKRAEHzyQjn_`,
+    //         'Dropbox-API-Arg': '{"path": "/rates.json","mode": "overwrite","autorename": false,"mute": false}'
+    //       }
+    //     })
+
+    //     const res = await data.json()
+    //     console.log(res)
+
+    //   } catch (error) {
+    //     console.log(error)
+    //   }
+    // }
+
+    // dropbox();
+
+    // async function dropboxDownload() {
+    //   try {
+    //     const data = await fetch('https://content.dropboxapi.com/2/files/download', {
+    //       method: 'POST',
+    //       headers: {
+    //         'Content-Type': 'application/octet-stream',
+    //         'Authorization': `Bearer sl.BlKmBAZLkwIGsfscI27KfLt9wsAR8goaJBLJFPoM0aMBvv6A847rKdB5q-Dwkh80yKsX0espIjn_ranzMTr-_rd7CY-74Mb2jx-23pCfmTZk2hd_zJXHxN8C0Rguu-_WSKRAEHzyQjn_`,
+    //         'Dropbox-API-Arg': '{"path": "/rates.json"}'
+    //       }
+    //     })
+
+    //     const res = await data.json()
+    //     console.log(res)
+
+    //   } catch (error) {
+    //     console.log(error)
+    //   }
+    // }
+
+    // dropboxDownload();
+
   }, [])
 
   return (
