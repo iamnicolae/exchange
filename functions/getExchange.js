@@ -1,3 +1,4 @@
+import fetch from 'node-fetch';
 const getDropboxToken = require('./utils/getDropboxToken')
 
 exports.handler = async function (event, context) {
