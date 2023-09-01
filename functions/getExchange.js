@@ -1,49 +1,31 @@
-const fs = require('fs').promises
-const path = require('path')
-
-//const testJSON = require('../dist/exchangeRates.json')
+const getDropboxToken = require('./utils/getDropboxToken')
 
 exports.handler = async function (event, context) {
-
-  // fs.readFile('/exchangeRates.json', (err, data) => {
-  //   //if (err) return res.json(err);
-  //   const exchangeRates = JSON.parse(data);
-
-  //   return {
-  //     statusCode: 200,
-  //     body: JSON.stringify(exchangeRates)
-  //   }
-  // });
-
-  //const data = await fs.readFile('./exchangeRates.json');
+  const dropboxToken = await getDropboxToken()
+  const { DROPBOX_FILE_NAME, DROPBOX_GET_FILE_URL } = process.env
 
   try {
-    const data = await fetch('https://content.dropboxapi.com/2/files/download', {
+    const response = await fetch(DROPBOX_GET_FILE_URL, {
       method: 'POST',
       headers: {
         'Content-Type': 'application/octet-stream',
-        'Authorization': `Bearer sl.BlNxuRkvJOM4MEG2FPBU4OEpeu6hzOKDLlcdErwG0EOk2g7QhzDJmUn1VfNlOSiuxyU3UEQwGyaGevRT85Rk_jlqsKMNb2IVx804sCnGSstHZTAJsM35YoPGxbRtE8X0TojWuAfQBtAF`,
-        'Dropbox-API-Arg': '{"path": "/rates.json"}'
+        'Authorization': `Bearer ${dropboxToken}`,
+        'Dropbox-API-Arg': `{"path": "/${DROPBOX_FILE_NAME}"}`
       }
     })
 
-    const res = await data.json()
-    //console.log(res)
+    const data = await response.json()
+
     return {
       statusCode: 200,
-      body: JSON.stringify(res)
+      body: JSON.stringify(data)
     }
 
   } catch (error) {
     console.log(error)
+    return {
+      statusCode: 400,
+      body: JSON.stringify(error)
+    }
   }
-
-
-
-
-
 }
-
-
-
-
