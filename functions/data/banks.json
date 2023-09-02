@@ -9,7 +9,7 @@
   },
   {
     "name": "Banca Transilvania",
-    "logo": "bt.svg",
+    "logo": "bt.png",
     "exchange_url": "https://www.bancatransilvania.ro/conturi-si-operatiuni/operatiuni/curs-valutar/curs-valutar-la-case-de-schimb",
     "row_selector": "#valute div.tr",
     "buy_rate_selector": "div.td:nth-child(3)",
@@ -57,7 +57,7 @@
   },
   {
     "name": "Alpha Bank",
-    "logo": "alpha.ico",
+    "logo": "alpha.png",
     "exchange_url": "https://www.curs-valutar-bnr.ro/curs-valutar-banci/alpha-bank",
     "row_selector": ".currency-table table tbody tr",
     "buy_rate_selector": "td:nth-child(3)",
