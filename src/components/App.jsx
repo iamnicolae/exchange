@@ -1,7 +1,8 @@
 import { useEffect, useState } from 'react'
 import './App.css'
 
-import Logo from './Logo';
+import Logo from './Logo'
+import Footer from './Footer'
 
 function App() {
 
@@ -21,6 +22,7 @@ function App() {
     <div className='app'>
       <div className="container">
         <Logo />
+        <Footer />
       </div>
       valutar
     </div>
