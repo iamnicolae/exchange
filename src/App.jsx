@@ -12,9 +12,11 @@ function App() {
     //   .then(data => data.json())
     //   .then(msg => console.log(msg))
 
-    // fetch('/.netlify/functions/getExchange')
-    //   .then(data => data.json())
-    //   .then(msg => console.log(msg))
+    fetch('/.netlify/functions/getExchange')
+      .then(data => data.json())
+      .then(msg => console.log(msg))
+
+
 
     // async function dropbox() {
     //   var fileContent = JSON.stringify({ bank_name: '00000000000000000', });

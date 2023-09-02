@@ -1,12 +1,5 @@
 [
   {
-    "name": "Banca Românească",
-    "exchange_url": "https://www.banca-romaneasca.ro/instrumente-utile/curs-valutar/",
-    "row_selector": "#exchangeRates tbody tr",
-    "buy_rate_selector": "td:nth-child(4)",
-    "sell_rate_selector": "td:nth-child(5)"
-  },
-  {
     "name": "BRD",
     "exchange_url": "https://www.brd.ro/curs-valutar-si-dobanzi-de-referinta",
     "row_selector": "#tabExchangeOffice .tabel div:nth-child(2) p",
@@ -42,10 +35,10 @@
     "sell_rate_selector": "td:nth-child(2) span"
   },
   {
-    "name": "OTP Bank",
-    "exchange_url": "https://www.otpbank.ro/ro/curs-valutar",
-    "row_selector": ".curency-history-table tbody tr",
-    "buy_rate_selector": "td:nth-child(3)",
-    "sell_rate_selector": "td:nth-child(4)"
+    "name": "Banca Românească",
+    "exchange_url": "https://www.banca-romaneasca.ro/instrumente-utile/curs-valutar/",
+    "row_selector": "#exchangeRates tbody tr",
+    "buy_rate_selector": "td:nth-child(4)",
+    "sell_rate_selector": "td:nth-child(5)"
   }
 ]
