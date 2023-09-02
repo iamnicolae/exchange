@@ -1,0 +1,34 @@
+{
+  "short_name": "Valutar.xyz",
+  "name": "Valutar.xyz",
+  "icons": [
+    {
+      "src": "/images/icon_192.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "/images/icon_512.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ],
+  "start_url": "/",
+  "background_color": "#5d54a4",
+  "display": "standalone",
+  "scope": "/",
+  "theme_color": "#5d54a4",
+  "description": "Curs valutar banci Romania. Vezi cursul de schimb valutar de la casele de schimb a celor mai importante banci din Romania. Cursul este actualizat la 10 minute.",
+  "screenshots": [
+    {
+      "src": "/images/screenshot1.png",
+      "type": "image/png",
+      "sizes": "540x720"
+    },
+    {
+      "src": "/images/screenshot2.png",
+      "type": "image/png",
+      "sizes": "540x720"
+    }
+  ]
+}
