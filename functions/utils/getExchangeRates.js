@@ -13,6 +13,7 @@ async function getExchangeRates() {
       const ratesTableRows = $(bank.row_selector)
       const bankRates = {
         name: bank.name,
+        logo: bank.logo,
         rates: {}
       }
 
@@ -34,7 +35,10 @@ async function getExchangeRates() {
       exchangeRates.push(bankRates)
     }
 
-    return exchangeRates
+    return {
+      lastUpdate: new Date().toLocaleString("en-US", { timeZone: "Europe/Bucharest" }),
+      exchange: exchangeRates
+    }
 
   } catch (error) {
     console.log(error)

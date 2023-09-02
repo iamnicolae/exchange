@@ -1,6 +1,7 @@
 [
   {
     "name": "BRD",
+    "logo": "",
     "exchange_url": "https://www.brd.ro/curs-valutar-si-dobanzi-de-referinta",
     "row_selector": "#tabExchangeOffice .tabel div:nth-child(2) p",
     "buy_rate_selector": "#tabExchangeOffice .tabel div:nth-child(4)",
@@ -8,6 +9,7 @@
   },
   {
     "name": "Banca Transilvania",
+    "logo": "",
     "exchange_url": "https://www.bancatransilvania.ro/conturi-si-operatiuni/operatiuni/curs-valutar/curs-valutar-la-case-de-schimb",
     "row_selector": "#valute div.tr",
     "buy_rate_selector": "div.td:nth-child(3)",
@@ -15,6 +17,7 @@
   },
   {
     "name": "CEC Bank",
+    "logo": "",
     "exchange_url": "https://www.cec.ro/curs-valutar",
     "row_selector": ".exchange-table tbody tr",
     "buy_rate_selector": "td:nth-child(5)",
@@ -22,6 +25,7 @@
   },
   {
     "name": "ING",
+    "logo": "",
     "exchange_url": "https://ing.ro/persoane-fizice/curs-valutar",
     "row_selector": ".exchange-rates-table tbody tr",
     "buy_rate_selector": ".buy",
@@ -29,6 +33,7 @@
   },
   {
     "name": "Libra Bank",
+    "logo": "",
     "exchange_url": "https://www.librabank.ro/Curs_valutar",
     "row_selector": ".main .row .col-md-6 div:nth-child(5) table tbody tr",
     "buy_rate_selector": "td:nth-child(3) span",
@@ -36,6 +41,7 @@
   },
   {
     "name": "OTP Bank",
+    "logo": "",
     "exchange_url": "https://www.otpbank.ro/ro/curs-valutar",
     "row_selector": ".curency-history-table tbody tr",
     "buy_rate_selector": "td:nth-child(3)",
@@ -43,6 +49,7 @@
   },
   {
     "name": "Patria Bank",
+    "logo": "",
     "exchange_url": "https://www.patriabank.ro/curs-valutar",
     "row_selector": "#office table tbody tr",
     "buy_rate_selector": "td:nth-child(2)",
@@ -50,6 +57,7 @@
   },
   {
     "name": "Alpha Bank",
+    "logo": "",
     "exchange_url": "https://www.curs-valutar-bnr.ro/curs-valutar-banci/alpha-bank",
     "row_selector": ".currency-table table tbody tr",
     "buy_rate_selector": "td:nth-child(3)",
@@ -57,6 +65,7 @@
   },
   {
     "name": "UniCredit Bank",
+    "logo": "",
     "exchange_url": "https://www.curs-valutar-bnr.ro/curs-valutar-banci/unicredit-bank",
     "row_selector": ".currency-table table tbody tr",
     "buy_rate_selector": "td:nth-child(3)",
@@ -64,6 +73,7 @@
   },
   {
     "name": "Raiffeisen Bank",
+    "logo": "",
     "exchange_url": "https://www.curs-valutar-bnr.ro/curs-valutar-banci/raiffeisen-bank",
     "row_selector": ".currency-table table tbody tr",
     "buy_rate_selector": "td:nth-child(3)",
@@ -71,6 +81,7 @@
   },
   {
     "name": "BCR",
+    "logo": "",
     "exchange_url": "https://www.curs-valutar-bnr.ro/curs-valutar-banci/bcr",
     "row_selector": ".currency-table table tbody tr",
     "buy_rate_selector": "td:nth-child(3)",
