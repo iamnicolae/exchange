@@ -1,0 +1,37 @@
+.from-converter {
+  background: rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  padding: 20px;
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.15);
+  color: #fff;
+}
+
+.helper-title {
+  font-size: 3rem;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+.from-value {
+  width: 100%;
+  text-align: center;
+  cursor: pointer;
+  font-size: 10rem;
+  color: #fff;
+}
+
+.from-currency {
+  text-align: center;
+}
+
+.to-currency {
+  text-align: center;
+}
+
+.helper-text {
+  font-size: 3rem;
+  margin: 20px 0 20px;
+  padding: 0;
+  color: #f1effb;
+}

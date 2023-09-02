@@ -1,5 +1,6 @@
 import { useState, useRef, useEffect } from 'react'
 import { FiChevronDown, FiSquare, FiCheckSquare } from 'react-icons/fi'
+import './Dropdown.css'
 
 function Dropdown({ options, change, selected }) {
 
@@ -31,12 +32,12 @@ function Dropdown({ options, change, selected }) {
         }
       }
 
-      document.addEventListener("mousedown", clickOutside);
-      document.addEventListener("scroll", clickOutside);
+      document.addEventListener("mousedown", clickOutside)
+      document.addEventListener("scroll", clickOutside)
 
       return () => {
-        document.removeEventListener("mousedown", clickOutside);
-        document.removeEventListener("scroll", clickOutside);
+        document.removeEventListener("mousedown", clickOutside)
+        document.removeEventListener("scroll", clickOutside)
       };
     }, [ref])
   }

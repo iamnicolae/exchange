@@ -1,4 +1,4 @@
-
+import './Result.css'
 
 function Result({ exchange, currency }) {
   return (

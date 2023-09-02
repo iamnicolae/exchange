@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react'
 import Results from './Results'
 import Dropdown from './Dropdown'
+import './Converter.css'
 
 function Converter({ exchangeRates }) {
 
