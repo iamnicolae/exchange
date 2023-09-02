@@ -3,6 +3,7 @@ import './App.css'
 
 import Logo from './Logo'
 import Footer from './Footer'
+import Converter from './Converter'
 
 function App() {
 
@@ -23,6 +24,7 @@ function App() {
       <div className="container">
         <Logo />
         <Footer />
+        <Converter />
       </div>
       valutar
     </div>
