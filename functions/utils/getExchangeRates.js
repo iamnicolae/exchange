@@ -1,5 +1,6 @@
 const cheerio = require('cheerio')
 const getPageHTML = require('./getPageHTML')
+const sanitizeExchangeRates = require('./sanitizeExchangeRates')
 const banks = require('../data/banks.json')
 
 async function getExchangeRates() {
@@ -21,11 +22,11 @@ async function getExchangeRates() {
 
         if (currency) {
           if (bank.name === "BRD") {
-            bankRates.rates[`${currency}/RON`] = parseFloat($(`${bank.buy_rate_selector} p:nth-child(${i + 1})`).text().replace(',', '.').trim());
-            bankRates.rates[`RON/${currency}`] = parseFloat($(`${bank.sell_rate_selector} p:nth-child(${i + 1})`).text().replace(',', '.').trim());
+            bankRates.rates[`${currency}/RON`] = sanitizeExchangeRates($(`${bank.buy_rate_selector} p:nth-child(${i + 1})`))
+            bankRates.rates[`RON/${currency}`] = sanitizeExchangeRates($(`${bank.sell_rate_selector} p:nth-child(${i + 1})`))
           } else {
-            bankRates.rates[`${currency}/RON`] = parseFloat($row.find(bank.buy_rate_selector).text().replace(',', '.').trim());
-            bankRates.rates[`RON/${currency}`] = parseFloat($row.find(bank.sell_rate_selector).text().replace(',', '.').trim());
+            bankRates.rates[`${currency}/RON`] = sanitizeExchangeRates($row.find(bank.buy_rate_selector))
+            bankRates.rates[`RON/${currency}`] = sanitizeExchangeRates($row.find(bank.sell_rate_selector))
           }
         }
       })
