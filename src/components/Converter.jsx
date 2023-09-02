@@ -27,8 +27,8 @@ function Converter({ exchangeRates }) {
         }
 
         result = {
-          bank_name: ex.bank_name,
-          bank_logo: ex.bank_logo,
+          bank_name: ex.name,
+          bank_logo: ex.logo,
           result: exchangeCalculation
         }
 

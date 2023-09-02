@@ -4,8 +4,8 @@ function Result({ exchange, currency }) {
   return (
     <div className="exchange-result">
       <div className="bank">
-        <span className="bank-logo"><img src={`/logos/${exchange.logo}`} alt={exchange.name} /></span>
-        <span className="bank-name">{exchange.name}</span>
+        <span className="bank-logo"><img src={`/logos/${exchange.bank_logo}`} alt={exchange.bank_name} /></span>
+        <span className="bank-name">{exchange.bank_name}</span>
       </div>
       <div className="result">
         <span className="result-sum">{exchange.result.toFixed(2)}</span>
