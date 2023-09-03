@@ -36,8 +36,8 @@
     "logo": "libra.ico",
     "exchange_url": "https://www.librabank.ro/Curs_valutar",
     "row_selector": ".main .row .col-md-6 div:nth-child(5) table tbody tr",
-    "buy_rate_selector": "td:nth-child(3) span",
-    "sell_rate_selector": "td:nth-child(2) span"
+    "buy_rate_selector": "td:nth-child(2) span",
+    "sell_rate_selector": "td:nth-child(3) span"
   },
   {
     "name": "OTP Bank",
