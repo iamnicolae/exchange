@@ -40,20 +40,20 @@
     "sell_rate_selector": "td:nth-child(3) span"
   },
   {
-    "name": "OTP Bank",
-    "logo": "otp.ico",
-    "exchange_url": "https://www.otpbank.ro/ro/curs-valutar",
-    "row_selector": ".curency-history-table tbody tr",
-    "buy_rate_selector": "td:nth-child(3)",
-    "sell_rate_selector": "td:nth-child(4)"
-  },
-  {
     "name": "Patria Bank",
     "logo": "patria.ico",
     "exchange_url": "https://www.patriabank.ro/curs-valutar",
     "row_selector": "#office table tbody tr",
     "buy_rate_selector": "td:nth-child(2)",
     "sell_rate_selector": "td:nth-child(3)"
+  },
+  {
+    "name": "OTP Bank",
+    "logo": "otp.ico",
+    "exchange_url": "https://www.curs-valutar-bnr.ro/curs-valutar-banci/otp-bank",
+    "row_selector": ".currency-table table tbody tr",
+    "buy_rate_selector": "td:nth-child(3)",
+    "sell_rate_selector": "td:nth-child(4)"
   },
   {
     "name": "Alpha Bank",
